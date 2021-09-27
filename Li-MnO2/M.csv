@@ -1,0 +1,11 @@
+,Unnamed: 0,M 52,M 56,M 19,M 20,M 62,M 52 HR,M 19 HR,M 20 HR
+0,Cell size,C,5/4 C,Short D,D,DD,C,Short D,D
+1,Cell construction,Spiral,Spiral,Spiral,Spiral,Spiral,Spiral,Spiral,Spiral
+2,Nominal voltage,3.0 V,3.0 V,3.0 V,3.0 V,3.0 V,3.0 V,3.0 V,3.0 V
+3,Nominal capacity,5.6 Ah,6.7 Ah,10.3 Ah,12.6 Ah,33.0 Ah,4.8 Ah,10.3 Ah,11.5 Ah
+4,Max. continuous current,2.0 A,2.5 A,3.0 A,3.5 A,6.0 A,2.0 A,4.0 A,4.0 A
+5,Max. pulse discharge rate,4.0 A,6.0 A,7.5 A,8.0 A,12.0 A,5.0 A,10.0 A,10.0 A
+6,Max. outside diameter,26.2 mm,26.2 mm,33.5 mm,34.2 mm,42.5 mm,26.2 mm,33.5 mm,34.2 mm
+7,Max. height,51.5 mm,61.5 mm,58.5 mm,61.5 mm,133.0 mm,51.5 mm,58.5 mm,61.5 mm
+8,Typical weight,58 g,70 g,105 g,117 g,355 g,59 g,107 g,117 g
+9,Operating temperature range,- 40 / + 72°C,- 40 / + 72°C,- 40 / + 72°C,- 40 / + 72°C,- 40 / + 72°C,- 40 / + 72°C,- 40 / + 72°C,- 40 / + 72°C

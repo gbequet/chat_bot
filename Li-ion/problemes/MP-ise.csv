@@ -1,0 +1,13 @@
+,Unnamed: 0,(1)MP 174565 ise (1),MP 176065 ise
+0,Form factor,Prismatic,Prismatic
+1,Nominal voltage,3.65 V,3.65 V
+2,Nominal capacity,4.0 Ah,5.6 Ah
+3,Max. continuous discharge current,8.0 A,11.0 A
+4,Max. pulse discharge rate,16.0 A,22.0 A
+5,Max. charge current,4.0 A,5.6 A
+6,Cycle life,2300,2200
+7,(Cycled to 70 % of the cells,"(100 % DoD,","(100 % DoD,"
+8,original capacity),"C-C/2, + 20°C)","C-C/2, + 20°C)"
+9,Typical weight,97 g,135 g
+10,Discharge temperature range,- 30 / + 60°C,- 30 / + 60°C
+11,Charge temperature range,- 30 / + 60°C,- 30 / + 60°C
