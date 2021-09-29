@@ -1,0 +1,22 @@
+{"intents": [
+    {
+        "tag": "greeting",
+        "patterns": ["Hi", "Hello", "Good day", "Good morning", "Good evening", "Whats up"],
+        "responses": ["Hello!", "Hi!", "Good to see you!"]
+    },
+    {
+        "tag": "goodbye",
+        "patterns": ["see you", "Goodbye", "Bye bye", "Later"],
+        "responses": ["See you next time!", "Nice talking to you", "Goodbye!"]
+    },
+    {
+        "tag": "Typical weight",
+        "patterns": ["what is the weight of", "how heavy is the battery", "how many gramms does the battery weigh"],
+        "responses": []
+    },
+    {
+        "tag": "name",
+        "patterns": ["What's your name?", "What should I call you?"],
+        "responses": ["You can call me Bob", "I'm Bob!"]
+    }
+]}
