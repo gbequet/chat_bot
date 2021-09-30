@@ -9,6 +9,7 @@ import re
 import json 
 import pickle
 
+nltk.download('punkt')
 
 def rearange_data(df):
     del df['Unnamed: 0']
@@ -52,13 +53,27 @@ def chat():
         results_index = np.argmax(results)
         tag = labels[results_index]
 
-
-        if (tag == "Typical weight"):
+        if (tag not in ["greeting", "goodbye", "name"]):
             pile_pattern = 'LSH? [0-9]*'
             pile_to_search = re.findall(pile_pattern, inp)
 
             reponse = str(df.loc[pile_to_search, tag].to_numpy()[0])
-            print("The weight of " + str(pile_to_search[0]) + ' is ' + reponse)
+            print("The " + tag.lower() + " of the "\
+             + str(pile_to_search[0]) + " battery is " + reponse)
+             
+        else:
+            for tg in data["intents"]:
+                if tg['tag'] == tag:
+                    responses = tg['responses']
+                
+            print(random.choice(responses))
+
+        # if (tag == "Typical weight"):
+        #     pile_pattern = 'LSH? [0-9]*'
+        #     pile_to_search = re.findall(pile_pattern, inp)
+
+        #     reponse = str(df.loc[pile_to_search, tag].to_numpy()[0])
+        #     print("The weight of " + str(pile_to_search[0]) + ' is ' + reponse)
 
 
 if __name__ == "__main__":
