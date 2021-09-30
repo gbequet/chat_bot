@@ -53,7 +53,8 @@ def chat():
         tag = labels[results_index]
 
         if (tag not in ["greeting", "goodbye", "name"]):
-            pile_pattern = 'LSH? [0-9]*'
+            pile_pattern = 'LSH? [0-9]+\-[0-9A-Z]+|LSH? [0-9]+\s[A-Z][a-z]+|'\
+            'LSH? [0-9]*'
             pile_to_search = re.findall(pile_pattern, inp)
 
             #Une liste vide donne faux
