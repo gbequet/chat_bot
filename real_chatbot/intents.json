@@ -56,7 +56,7 @@
     },
     {
         "tag": "Typical weight",
-        "patterns": ["what is the weight of", "how heavy is the battery", "how many gramms does the battery weigh", "What is the typical weight of", "Is the battery heavy"],
+        "patterns": ["what is the weight of", "how heavy is the battery", "how many grams does the battery weigh", "What is the typical weight of", "Is the battery heavy"],
         "responses": []
     },
     {
