@@ -21,11 +21,7 @@ def rearange_data(df):
     return df
 
 
-df = pd.read_csv('Li-SOCl2/LS_LSH.csv')
-df = rearange_data(df)
-
-
-#s est une phrase, words sont tous les mots se trouvant dans les patterns
+# s est une phrase, words sont tous les mots se trouvant dans les patterns
 def bag_of_words(s, words):
     bag = [0 for _ in range(len(words))]
 
@@ -45,7 +41,7 @@ def chat():
     "Type quit to quit the chat\n")
     while True:
         inp = input("You: ")
-        if (inp.lower() == "quit"):
+        if (inp == "quit"):
             break
         
         results = model.predict([bag_of_words(inp,words)])
@@ -53,19 +49,23 @@ def chat():
         tag = labels[results_index]
 
         if (tag not in ["greeting", "goodbye", "name"]):
-            pile_pattern = 'LSH? [0-9]+\-[0-9A-Z]+|LSH? [0-9]+\s[A-Z][a-z]+|'\
-            'LSH? [0-9]*'
+            pile_pattern = 'LSH [0-9]{2}\-[0-9a-zA-Z]+|LSH? [0-9]{2}\s[A-Z][a-zA-Z]+|'\
+                'LSH? [0-9a-zA-Z]*|'\
+                'G [0-9]{2}/[0-9](?![0-9a-zA-Z])|'\
+                'LO [0-9]{2} SXC?(?![0-9a-zA-Z])|LO [0-9]{2} SHX?(?![0-9a-zA-Z])|'\
+                'M [0-9]{2} HR(?![0-9a-zA-Z])|M [0-9]{2}(?![0-9a-zA-Z])'
             pile_to_search = re.findall(pile_pattern, inp)
 
             #Une liste vide donne faux
             if not pile_to_search:
-                print("You have to indicate a correct battery name")
+                print("zoivnevi You have to indicate a correct battery name")
             else:
                 try:
                     reponse = str(df.loc[pile_to_search, tag].to_numpy()[0])
                     print("The " + tag.lower() + " of the "\
                     + str(pile_to_search[0]) + " battery is " + reponse)
                 except:
+                    print(str(pile_to_search[0]))
                     print("You have to indicate a correct battery name")
 
              
@@ -76,15 +76,12 @@ def chat():
                 
             print(random.choice(responses))
 
-        # if (tag == "Typical weight"):
-        #     pile_pattern = 'LSH? [0-9]*'
-        #     pile_to_search = re.findall(pile_pattern, inp)
-
-        #     reponse = str(df.loc[pile_to_search, tag].to_numpy()[0])
-        #     print("The weight of " + str(pile_to_search[0]) + ' is ' + reponse)
 
 
 if __name__ == "__main__":
+    df = pd.read_csv('all_pile.csv')
+    df = df.set_index('Unnamed: 0')
+
     stemmer = LancasterStemmer()
 
     with open("intents.json") as file:
@@ -156,10 +153,10 @@ if __name__ == "__main__":
     model=tflearn.DNN(net)
 
     # try:
-    #     model.load("model.tflearn")
+    model.load("model.tflearn")
     # except:
-    model.fit(training, output, n_epoch=500, batch_size=8, show_metric=True)
-    model.save("model.tflearn")
+    # model.fit(training, output, n_epoch=500, batch_size=8, show_metric=True)
+    # model.save("model.tflearn")
     
 
     chat()

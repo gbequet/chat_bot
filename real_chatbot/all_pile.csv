@@ -1,0 +1,38 @@
+Unnamed: 0,Cell size,Cell construction,Nominal voltage,Nominal capacity,Max. continuous current,Max. pulse discharge rate,Max. outside diameter,Max. height,Typical weight,Operating temperature range
+LS 14250,1/2 AA,Bobbin,3.6 V,1.2 Ah,35 mA,0.1 A,14.55 mm,25.15 mm,8.9 g,- 60 / + 85°C
+LS 14500,AA,Bobbin,3.6 V,2.6 Ah,50 mA,0.25 A,14.55 mm,50.3 mm,16.7 g,- 60 / + 85°C
+LS 17330,2/3 A,Bobbin,3.6 V,2.1 Ah,25 mA,0.12 A,16.5 mm,33.4 mm,14.4 g,- 60 / + 85°C
+LS 17500,A,Bobbin,3.6 V,3.6 Ah,100 mA,0.25 A,17.13 mm,50.9 mm,21.9 g,- 60 / + 85°C
+LS 26500,C,Bobbin,3.6 V,7.7 Ah,150 mA,0.3 A,26.0 mm,50.4 mm,48 g,- 60 / + 85°C
+LS 33600,D,Bobbin,3.6 V,17.0 Ah,250 mA,0.4 A,33.4 mm,61.6 mm,90 g,- 60 / + 85°C
+LSH 14 Light,C,Spiral,3.6 V,3.6 Ah,1.3 A,2.0 A,26.0 mm,50.4 mm,51 g,- 60 / + 85°C
+LSH 14,C,Spiral,3.6 V,5.8 Ah,1.3 A,2.0 A,26.0 mm,50.4 mm,51 g,- 60 / + 85°C
+LSH 20,D,Spiral,3.6 V,13.0 Ah,1.8 A,4.0 A,33.4 mm,61.6 mm,100 g,- 60 / + 85°C
+LSH 20-HTS,D,Spiral,3.6 V,11.0 Ah,1.0 A,3.0 A,33.4 mm,61.6 mm,100 g,- 60 / + 85°C
+LSH 20-150,D,Spiral,3.6 V,14.0 Ah,300 mA,0.5 A,32.05 mm,61.7 mm,104.5 g,- 40 / + 150°C
+G 06/6,AA,Spiral,2.8 V,0.95 Ah,0.5 A,0.8 A,14.2 mm,50.3 mm,15 g,- 60 / + 70°C
+G 36/2,Long A,Spiral,2.8 V,1.7 Ah,1.5 A,2.5 A,16.3 mm,57.7 mm,18 g,- 60 / + 70°C
+G 52/3,C,Spiral,2.8 V,3.2 Ah,2.5 A,5.0 A,25.6 mm,49.5 mm,47 g,- 60 / + 70°C
+G 54/3,5/4 C,Spiral,2.8 V,5.0 Ah,2.5 A,5.0 A,25.6 mm,60.2 mm,58 g,- 60 / + 70°C
+G 26/2,D,Spiral,2.8 V,7.75 Ah,2.5 A,5.0 A,34.5 mm,59.8 mm,85 g,- 60 / + 70°C
+G 22/6,DD,Spiral,2.8 V,16.5 Ah,3.0 A,10.0 A,33.3 mm,120.6 mm,175 g,- 60 / + 70°C
+G 62/1,Long fat DD,Spiral,2.8 V,34.0 Ah,8.0 A,12.0 A,41.7 mm,141.0 mm,300 g,- 60 / + 70°C
+LO 34 SX,1/3 C,Spiral,2.8 V,1.0 Ah,0.5 A,1.0 A,25.6 mm,20.45 mm,16 g,- 40 / + 70°C
+LO 35 SX,2/3 C,Spiral,2.8 V,2.2 Ah,2.0 A,5.0 A,25.9 mm,35.9 mm,30 g,- 60 / + 70°C
+LO 40 SX,2/3 thin D,Spiral,2.8 V,3.5 Ah,2.0 A,5.0 A,28.95 mm,42.29 mm,40 g,- 60 / + 70°C
+LO 26 SX,D,Spiral,2.8 V,7.75 Ah,2.5 A,5.0 A,34.2 mm,59.3 mm,85 g,- 60 / + 70°C
+LO 26 SXC,D,Spiral,2.8 V,9.2 Ah,2.5 A,10.0 A,34.2 mm,59.3 mm,85 g,- 60 / + 70°C
+LO 25 SX,Fat D,Spiral,2.8 V,8.0 Ah,2.5 A,10.0 A,39.5 mm,50.3 mm,96 g,- 60 / + 70°C
+LO 29 SHX,C,Spiral,2.8 V,3.75 Ah,2.5 A,6.0 A,25.6 mm,50.4 mm,40 g,- 60 / + 70°C
+LO 43 SHX,5/4 C,Spiral,2.8 V,5.0 Ah,2.5 A,10.0 A,26.0 mm,59.2 mm,53 g,- 60 / + 70°C
+LO 30 SHX,Thin D,Spiral,2.8 V,5.75 Ah,3.0 A,10.0 A,29.1 mm,59.9 mm,63 g,- 60 / + 70°C
+LO 26 SHX,D,Spiral,2.8 V,7.5 Ah,4.0 A,15.0 A,34.2 mm,59.3 mm,85 g,- 60 / + 70°C
+LO 39 SHX,F,Spiral,2.8 V,11.5 Ah,3.0 A,60.0 A,31.9 mm,100.3 mm,125 g,- 60 / + 70°C
+M 52,C,Spiral,3.0 V,5.6 Ah,2.0 A,4.0 A,26.2 mm,51.5 mm,58 g,- 40 / + 72°C
+M 56,5/4 C,Spiral,3.0 V,6.7 Ah,2.5 A,6.0 A,26.2 mm,61.5 mm,70 g,- 40 / + 72°C
+M 19,Short D,Spiral,3.0 V,10.3 Ah,3.0 A,7.5 A,33.5 mm,58.5 mm,105 g,- 40 / + 72°C
+M 20,D,Spiral,3.0 V,12.6 Ah,3.5 A,8.0 A,34.2 mm,61.5 mm,117 g,- 40 / + 72°C
+M 62,DD,Spiral,3.0 V,33.0 Ah,6.0 A,12.0 A,42.5 mm,133.0 mm,355 g,- 40 / + 72°C
+M 52 HR,C,Spiral,3.0 V,4.8 Ah,2.0 A,5.0 A,26.2 mm,51.5 mm,59 g,- 40 / + 72°C
+M 19 HR,Short D,Spiral,3.0 V,10.3 Ah,4.0 A,10.0 A,33.5 mm,58.5 mm,107 g,- 40 / + 72°C
+M 20 HR,D,Spiral,3.0 V,11.5 Ah,4.0 A,10.0 A,34.2 mm,61.5 mm,117 g,- 40 / + 72°C
