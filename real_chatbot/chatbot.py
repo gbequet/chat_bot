@@ -60,9 +60,13 @@ def chat():
             if not pile_to_search:
                 print("You have to indicate a correct battery name")
             else:
-                reponse = str(df.loc[pile_to_search, tag].to_numpy()[0])
-                print("The " + tag.lower() + " of the "\
-                + str(pile_to_search[0]) + " battery is " + reponse)
+                try:
+                    reponse = str(df.loc[pile_to_search, tag].to_numpy()[0])
+                    print("The " + tag.lower() + " of the "\
+                    + str(pile_to_search[0]) + " battery is " + reponse)
+                except:
+                    print("You have to indicate a correct battery name")
+
              
         else:
             for tg in data["intents"]:
