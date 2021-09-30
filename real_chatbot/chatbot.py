@@ -9,7 +9,6 @@ import re
 import json 
 import pickle
 
-nltk.download('punkt')
 
 def rearange_data(df):
     del df['Unnamed: 0']
@@ -57,9 +56,13 @@ def chat():
             pile_pattern = 'LSH? [0-9]*'
             pile_to_search = re.findall(pile_pattern, inp)
 
-            reponse = str(df.loc[pile_to_search, tag].to_numpy()[0])
-            print("The " + tag.lower() + " of the "\
-             + str(pile_to_search[0]) + " battery is " + reponse)
+            #Une liste vide donne faux
+            if not pile_to_search:
+                print("You have to indicate a correct battery name")
+            else:
+                reponse = str(df.loc[pile_to_search, tag].to_numpy()[0])
+                print("The " + tag.lower() + " of the "\
+                + str(pile_to_search[0]) + " battery is " + reponse)
              
         else:
             for tg in data["intents"]:
