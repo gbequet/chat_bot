@@ -16,6 +16,11 @@ class Bot:
         self.df = pd.read_csv('all_pile.csv')
         self.df = self.df.set_index('Unnamed: 0')
 
+        for p in self.df.index:
+            print(p)
+        for p in self.df.columns:
+            print(p)
+
         self.stemmer = LancasterStemmer()
 
         with open("intents.json") as file:
@@ -99,7 +104,12 @@ class Bot:
         results_index = np.argmax(results)
         tag = self.labels[results_index]
 
-        if (tag not in ["greeting", "goodbye", "how you doing", "name"]):
+        taux = results[0][results_index]
+        if (taux < 0.90):
+            return "I don't understand your question"
+            
+
+        if (tag not in ["greeting", "goodbye", "how you doing", "name", "list attributes"]):
             pile_pattern = 'LSH [0-9]{2}\-[0-9a-zA-Z]+|LSH? [0-9]{2}\s[A-Z][a-zA-Z]+|'\
                 'LSH? [0-9a-zA-Z]*|'\
                 'G [0-9]{2}/[0-9](?![0-9a-zA-Z])|'\
