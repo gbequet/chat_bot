@@ -46,8 +46,8 @@ class Bot:
 
             self.labels = sorted(self.labels)
 
-            training = []
-            output = []
+            self.training = []
+            self.output = []
 
             out_empty = [0 for _ in range(len(self.labels))]
 
