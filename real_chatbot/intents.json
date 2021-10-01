@@ -1,0 +1,67 @@
+{"intents": [
+    {
+        "tag": "greeting",
+        "patterns": ["Hi", "Hello", "Good day", "Good morning", "Good evening", "Whats up"],
+        "responses": ["Hello!", "Hi!", "Good to see you!"]
+    },
+    {
+        "tag": "goodbye",
+        "patterns": ["see you", "Goodbye", "Bye bye", "Later"],
+        "responses": ["See you next time!", "Nice talking to you", "Goodbye!"]
+    },
+    {
+        "tag": "name",
+        "patterns": ["What's your name?", "What should I call you?"],
+        "responses": ["You can call me Bob the Bot", "I'm Bob! Your Chatbot!"]
+    },
+    {
+        "tag": "Cell size",
+        "patterns": ["How big is the cell?","What is the cell size", "What is the size of the battery", "What type is the battery?"], 
+        "responses": []
+    },
+    {
+        "tag": "Cell construction",
+        "patterns":["What is the cell construction", "What is the structure of", "What is inside the battery"], 
+        "responses": []
+    },
+    {
+        "tag": "Nominal voltage",
+        "patterns":["What is the voltage of", "How powerful is the battery", "How many volts does the battery have", "What is the nominal voltage of"], 
+        "responses": []
+    },
+    {
+        "tag": "Nominal capacity",
+        "patterns":["What is the nominal capacity of", "What is the capacity of", "How many Ah does the battery have","How many Amp Hours", "How powerful is the battery"] , 
+        "responses": []
+    },
+    {
+        "tag": "Max. continuous current",
+        "patterns":["What is the maximum continuous current of", "What is the MCC of", "Can you tell me the MCC of"] , 
+        "responses": []
+    },
+    {
+        "tag": "Max. pulse discharge rate",
+        "patterns":["What is the maximum pulse discharge rate of", "How many A is the max pulse discharge rate of", "What is the pulse discharge rate of"] , 
+        "responses": []
+    },
+    {
+        "tag": "Max. outside diameter",
+        "patterns":["What is the diameter of", "What is the maximum outside diameter of", "How long is the outside diameter of the battery", "How large is the battery"] , 
+        "responses": []
+    },
+    {
+        "tag": "Max. height",
+        "patterns":["What is the maximum height of the battery?", "How tall is the battery", "How long is the battery", "What is the length of the battery?"] , 
+        "responses": []
+    },
+    {
+        "tag": "Typical weight",
+        "patterns": ["what is the weight of", "how heavy is the battery", "how many grams does the battery weigh", "What is the typical weight of", "Is the battery heavy"],
+        "responses": []
+    },
+    {
+        "tag": "Operating temperature range",
+        "patterns":["What is the average temperature of the battery?", "How hot does the battery get", "What is the operating temperature range", "What is the temperature range of", "Does the battery get hot?"] , 
+        "responses": []
+    }
+]}
