@@ -1,5 +1,6 @@
 from datetime import datetime
 from tkinter import *
+from tkinter import messagebox
 import textwrap
 from PIL import ImageTk, Image
 from bot import Bot
@@ -17,10 +18,14 @@ fenetre_chat.geometry("400x500")
 fenetre_chat.configure(bg=BG_COLOR)
 fenetre_chat.resizable(width=FALSE, height=FALSE)
 
+def show_about():
+    ''' show the about messagebox '''
+    messagebox.showinfo(message="Project Master 2 \n Data sciences and complex system from \n NASSABAIN Leonardo, BEQUET Guillaume and DELLALI Karim")
+
 # Boutons pour quitter la fenêtre (quit)
 # About us on pourra rajouter une création de fenêtre avec écris développé par ... 
 main_menu = Menu(fenetre_chat)
-main_menu.add_command(label="About us")
+main_menu.add_command(label="About us", command=show_about)
 main_menu.add_command(label="Quit", command=fenetre_chat.destroy)
 fenetre_chat.config(menu=main_menu)
 
@@ -41,7 +46,7 @@ def send(event): # Ce qui se passe quand on appuie sur entrée pour envoyer le m
 
         Dialog.config(foreground=TEXT_COLOR, font=FONT_BOLD)
 
-        res = bob.treat_message(msg)
+        res = bob.treat_message(getmsg)
         Dialog.insert(END, current_time, ("small", "colour"))
         Dialog.insert(END,textwrap.fill(res,30)+'\n\n')
 
@@ -61,7 +66,7 @@ def bouton_envoi(): # Si on envoie le message en cliquant sur le bouton d'envoi
 
         Dialog.config(foreground="white", font=FONT_BOLD)
 
-        res = bob.treat_message(msg)
+        res = bob.treat_message(getmsg)
         Dialog.insert(END, current_time, ("small", "colour"))
         Dialog.insert(END,textwrap.fill(res,30)+'\n\n')
 
