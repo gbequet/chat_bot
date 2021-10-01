@@ -2,6 +2,7 @@ from datetime import datetime
 from tkinter import *
 import textwrap
 from PIL import ImageTk, Image
+from bot import Bot
 
 # Pour les couleurs de polices, background, etc..
 BG_GRAY = '#ABB2B9'
@@ -40,7 +41,7 @@ def send(event): # Ce qui se passe quand on appuie sur entrée pour envoyer le m
 
         Dialog.config(foreground=TEXT_COLOR, font=FONT_BOLD)
 
-        res = "Le bot répond ici"
+        res = bob.treat_message(msg)
         Dialog.insert(END, current_time, ("small", "colour"))
         Dialog.insert(END,textwrap.fill(res,30)+'\n\n')
 
@@ -60,7 +61,7 @@ def bouton_envoi(): # Si on envoie le message en cliquant sur le bouton d'envoi
 
         Dialog.config(foreground="white", font=FONT_BOLD)
 
-        res = "Le bot répond ici"
+        res = bob.treat_message(msg)
         Dialog.insert(END, current_time, ("small", "colour"))
         Dialog.insert(END,textwrap.fill(res,30)+'\n\n')
 
@@ -121,5 +122,7 @@ def update():
 
 fenetre_chat.bind('<Return>', send)
 update()
+
+bob = Bot()
 
 fenetre_chat.mainloop()

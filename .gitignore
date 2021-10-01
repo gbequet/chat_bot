@@ -1,6 +1,7 @@
-real_chatbot/checkpoint
-real_chatbot/data.pickle
-real_chatbot/model.tflearn.data-00000-of-00001
-real_chatbot/model.tflearn.index
-real_chatbot/model.tflearn.meta
+checkpoint
+data.pickle
+model.tflearn.data-00000-of-00001
+model.tflearn.index
+model.tflearn.meta
 .DS_Store
+__pycache__/
