@@ -1,67 +1,106 @@
 {"intents": [
     {
         "tag": "greeting",
-        "patterns": ["Hi", "Hello", "Good day", "Good morning", "Good evening", "Whats up"],
+        "patterns": ["salut", "bonjour", "wesh", "wesh mon pote", "Hi", "Hello", "Good day", "Good morning", "Good evening", "Whats up"],
         "responses": ["Hello!", "Hi!", "Good to see you!"]
     },
     {
         "tag": "goodbye",
-        "patterns": ["see you", "Goodbye", "Bye bye", "Later"],
+        "patterns": ["a plus", "a +", "au revoir", "ciao", "see you", "Goodbye", "Bye bye", "Later"],
         "responses": ["See you next time!", "Nice talking to you", "Goodbye!"]
     },
     {
+        "tag": "how you doing",
+        "patterns": ["comment tu vas", "ca va?", "tu vas bien", "how are you", "are you ok?", "are you happy"],
+        "responses": ["I'm good and you?", "Really good", "Fine and you?", "I'm great, my creators are awesome"]
+    },
+    {
         "tag": "name",
-        "patterns": ["What's your name?", "What should I call you?"],
+        "patterns": ["Comment tu t'appeles", "Quel est ton nom", "c'est quoi ton nom", "quel est ton prenom", "What's your name?", "What should I call you?"],
         "responses": ["You can call me Bob the Bot", "I'm Bob! Your Chatbot!"]
     },
     {
         "tag": "Cell size",
-        "patterns": ["How big is the cell?","What is the cell size", "What is the size of the battery", "What type is the battery?"], 
+        "patterns": ["Quelle est la taille", "Quelle est la taille de la batterie", "Taille de la batterie", "Quelle taille fait la batterie", "How big is the cell?","What is the cell size", "What is the size of the battery", "What type is the battery?", "size of"], 
         "responses": []
     },
     {
         "tag": "Cell construction",
-        "patterns":["What is the cell construction", "What is the structure of", "What is inside the battery"], 
+        "patterns":["quelle est la construction", "quelle est la structure", "qui a t'il dans la batterie", "structure de", "What is the cell construction", "What is the structure of", "What is inside the battery", "construction of"], 
         "responses": []
     },
     {
         "tag": "Nominal voltage",
-        "patterns":["What is the voltage of", "How powerful is the battery", "How many volts does the battery have", "What is the nominal voltage of"], 
+        "patterns":[
+            "quelle est la tension de la batterie",
+            "tension de",
+            "voltage of",
+            "combien de volts la batterie a","What is the voltage of", "How powerful is the battery", "How many volts does the battery have", "What is the nominal voltage of"], 
         "responses": []
     },
     {
         "tag": "Nominal capacity",
-        "patterns":["What is the nominal capacity of", "What is the capacity of", "How many Ah does the battery have","How many Amp Hours", "How powerful is the battery"] , 
+        "patterns":["quelle est la capacité de la pile",
+            "capacité de la pile",
+            "capacity of the battery",
+            "combien d'ampere a la pile",
+            "combien d'Ah a la pile",
+            "What is the nominal capacity of", "What is the capacity of", "How many Ah does the battery have","How many Amp Hours", "How powerful is the battery"] , 
         "responses": []
     },
     {
         "tag": "Max. continuous current",
-        "patterns":["What is the maximum continuous current of", "What is the MCC of", "Can you tell me the MCC of"] , 
+        "patterns":["quel est le courant continu",
+            "courant continu de la pile",
+            "quel est le courant continu maximal",
+            "continuous current of the",
+            "What is the maximum continuous current of", "What is the MCC of", "Can you tell me the MCC of"] , 
         "responses": []
     },
     {
         "tag": "Max. pulse discharge rate",
-        "patterns":["What is the maximum pulse discharge rate of", "How many A is the max pulse discharge rate of", "What is the pulse discharge rate of"] , 
+        "patterns":["quel est le taux de décharge d'impulsions",
+            "taux de décharge d'impulsions de la pile",
+            "quel est le taux de décharge d'impulsions maximal",
+            "maximum pulse of the",
+            "What is the maximum pulse discharge rate of", "How many A is the max pulse discharge rate of", "What is the pulse discharge rate of"] , 
         "responses": []
     },
     {
         "tag": "Max. outside diameter",
-        "patterns":["What is the diameter of", "What is the maximum outside diameter of", "How long is the outside diameter of the battery", "How large is the battery"] , 
+        "patterns":["quel est le diametre",
+            "diametre de la pile",
+            "quel est le diametre maximal",
+            "maximum diametre of the",
+            "diameter of the",
+            "What is the diameter of", "What is the maximum outside diameter of", "How long is the outside diameter of the battery", "How large is the battery"] , 
         "responses": []
     },
     {
         "tag": "Max. height",
-        "patterns":["What is the maximum height of the battery?", "How tall is the battery", "How long is the battery", "What is the length of the battery?"] , 
+        "patterns":["quelle est la hauteur",
+            "hauteur de la pile",
+            "height of the",
+            "What is the maximum height of the battery?", "How tall is the battery", "How long is the battery", "What is the length of the battery?"] , 
         "responses": []
     },
     {
         "tag": "Typical weight",
-        "patterns": ["what is the weight of", "how heavy is the battery", "how many grams does the battery weigh", "What is the typical weight of", "Is the battery heavy"],
+        "patterns": ["quel est le poids",
+            "poids de la pile",
+            "weight of the",
+            "what is the weight of", "how heavy is the battery", "how many grams does the battery weigh", "What is the typical weight of", "Is the battery heavy"],
         "responses": []
     },
     {
         "tag": "Operating temperature range",
-        "patterns":["What is the average temperature of the battery?", "How hot does the battery get", "What is the operating temperature range", "What is the temperature range of", "Does the battery get hot?"] , 
+        "patterns":["quelle est la plage de température de fonctionnement",
+            "temperature de la pile",
+            "quelle est la plage de température",
+            "a quelle température la pile peut aller",
+            "temperature range of the",
+            "temperature of the",
+            "What is the average temperature of the battery?", "How hot does the battery get", "What is the operating temperature range", "What is the temperature range of", "Does the battery get hot?"] , 
         "responses": []
     }
 ]}

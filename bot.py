@@ -99,7 +99,7 @@ class Bot:
         results_index = np.argmax(results)
         tag = self.labels[results_index]
 
-        if (tag not in ["greeting", "goodbye", "name"]):
+        if (tag not in ["greeting", "goodbye", "how you doing", "name"]):
             pile_pattern = 'LSH [0-9]{2}\-[0-9a-zA-Z]+|LSH? [0-9]{2}\s[A-Z][a-zA-Z]+|'\
                 'LSH? [0-9a-zA-Z]*|'\
                 'G [0-9]{2}/[0-9](?![0-9a-zA-Z])|'\
@@ -109,12 +109,14 @@ class Bot:
 
             #Une liste vide donne faux
             if not pile_to_search:
+                print(tag)
                 rep = "You have to indicate a correct battery name"
             else:
                 try:
                     reponse = str(self.df.loc[pile_to_search, tag].to_numpy()[0])
                     rep = "The " + tag.lower() + " of the " + str(pile_to_search[0]) + " battery is " + reponse
                 except:
+                    print(tag)
                     rep = "You have to indicate a correct battery name"
 
         else:
