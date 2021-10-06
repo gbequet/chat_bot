@@ -109,7 +109,7 @@ class Bot:
             return "I don't understand your question"
             
 
-        if (tag not in ["greeting", "goodbye", "how you doing", "name", "list attributes"]):
+        if (tag not in ["greeting", "goodbye", "how you doing","thanks", "name"]):
             pile_pattern = 'LSH [0-9]{2}\-[0-9a-zA-Z]+|LSH? [0-9]{2}\s[A-Z][a-zA-Z]+|'\
                 'LSH? [0-9a-zA-Z]*|'\
                 'G [0-9]{2}/[0-9](?![0-9a-zA-Z])|'\
